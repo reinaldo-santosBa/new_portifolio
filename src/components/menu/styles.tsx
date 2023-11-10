@@ -6,4 +6,10 @@ export const menu = styled.nav`
     padding: 2rem 8rem;
     align-items: center; 
     justify-content: space-between;
+    div{
+        display: flex;
+        flex-direction: row;
+        align-items: center; 
+        gap:1rem;
+    }
 `;
