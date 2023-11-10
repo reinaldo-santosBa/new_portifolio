@@ -15,6 +15,10 @@ export const darkTheme = {
 	},
 	input:{
 		inputBorder: '#4f4f4f' 
+	},
+	fontFamily:{
+		main:'Roboto, sans-serif',
+		title: 'Black Ops One, cursive'
 	}
 };
 export const lightTheme = {
@@ -32,5 +36,9 @@ export const lightTheme = {
 	},
 	input:{
 		inputBorder: '#E1E1E1' 
+	},
+	fontFamily:{
+		main:'Roboto, sans-serif',
+		title: 'Black Ops One, cursive'
 	}
 };
