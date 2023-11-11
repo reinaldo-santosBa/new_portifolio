@@ -1,7 +1,15 @@
 import styled from 'styled-components';
 
-export const menu = styled.nav`
+interface IMenu {
+    menuColor: boolean
+}
+
+export const menu = styled.nav<IMenu>`
     display: flex;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    background: ${props => props.menuColor ?  props.theme.background.backgroundSecondary : 'transparent'};
     flex-direction: row;
     padding: 2rem 8rem;
     align-items: center; 

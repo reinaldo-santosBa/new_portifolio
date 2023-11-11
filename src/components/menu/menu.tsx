@@ -1,6 +1,6 @@
 
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { SwitchButton } from '../switchButton/switchButton';
 import { LogoText } from '../logoText/logoText';
 import * as S from './styles';
@@ -11,8 +11,28 @@ interface IProps {
 }
 
 const Menu: React.FC<IProps> = ({toggleTheme,mode}:IProps) => {
+
+	const [scrolling, setScrolling] = useState(false);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			if (window.scrollY > 50) {
+				setScrolling(true);
+			} else {
+				setScrolling(false);
+			}
+		};
+  
+		window.addEventListener('scroll', handleScroll);
+  
+		// Cleanup function to remove the event listener when the component is unmounted
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	}, []);
+
 	return (
-		<S.menu>
+		<S.menu menuColor={scrolling}>
 			<LogoText/>
 			<div>
 				<MenuItem item='about' text='About me'/>
