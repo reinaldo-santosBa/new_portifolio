@@ -67,6 +67,5 @@ export const GlobalStyles = createGlobalStyle`
     color: ${(props) => props.theme.fonts.fontPrimary};
     font-family:  ${(props) => props.theme.fontFamily.main};
     transition: .5s;
-    height: 200vh;
   }
 `;
