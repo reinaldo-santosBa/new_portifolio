@@ -4,10 +4,9 @@ export const AreaSwitch = styled.div`
     background: ${(props) => props.theme.background.backgroundSecondary};
     height: 1.5rem;
     cursor: pointer;
-    width: 3rem;
-    margin: 0 0.5rem;
+    width: 4rem;
+    padding: .5rem;
     display: flex;
-    padding: 0 .5rem;
     position: relative;
     align-items: center;
     justify-content: space-between;
