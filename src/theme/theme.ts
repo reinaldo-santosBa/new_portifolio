@@ -28,7 +28,7 @@ export const lightTheme = {
 	},
 	background: {
 		backgroundPrimary: '#FFFFFF ',
-		backgroundSecondary: '#F5F5F5',
+		backgroundSecondary: '#e5e5e5',
 	},
 	fonts: {
 		fontPrimary: '#171717',
