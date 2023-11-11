@@ -3,6 +3,7 @@ import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from './global/style';
 import { darkTheme, lightTheme } from './theme/theme';
 import { Menu } from './components/menu/menu';
+import { AboutSection } from './components/about/about';
 const App: React.FC = () => {
 	const [theme, setTheme] = React.useState('light');
 
@@ -13,6 +14,7 @@ const App: React.FC = () => {
 		<ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
 			<GlobalStyles />
 			<Menu mode={theme} toggleTheme={toggleTheme}/>
+			<AboutSection/>
 		</ThemeProvider>
 	);
 };
