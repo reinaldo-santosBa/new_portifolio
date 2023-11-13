@@ -6,7 +6,7 @@ interface IMenu {
 
 export const menu = styled.nav<IMenu>`
     display: flex;
-    width: 100vw;
+    width: 100%;
     position: fixed;
     z-index: 10;
     background: ${props => props.menuColor ?  props.theme.background.backgroundSecondary : 'transparent'};
