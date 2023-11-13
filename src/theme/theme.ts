@@ -3,7 +3,6 @@ export const darkTheme = {
 		primary: '#27AE60',
 		outline: '#fafafa',
 		colorFontPrimary: '#FFFFFF',
-
 	},
 	background: {
 		backgroundPrimary: '#171717',
@@ -17,14 +16,15 @@ export const darkTheme = {
 		inputBorder: '#4f4f4f'
 	},
 	fontFamily: {
-		main: 'Roboto, sans-serif',
+		main: 'DM Sans, sans-serif',
 		title: 'Black Ops One, cursive'
 	}
 };
 export const lightTheme = {
 	button: {
 		primary: '#27AE60',
-		outline: '#121212'
+		outline: '#121212',
+		colorFontPrimary: '#FFFFFF',
 	},
 	background: {
 		backgroundPrimary: '#FFFFFF ',
@@ -38,7 +38,7 @@ export const lightTheme = {
 		inputBorder: '#E1E1E1'
 	},
 	fontFamily: {
-		main: 'Roboto, sans-serif',
+		main: 'DM Sans, sans-serif',
 		title: 'Black Ops One, cursive'
 	}
 };
