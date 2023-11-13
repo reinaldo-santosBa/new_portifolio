@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const About = styled.section`
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 4rem;
     width: 100%;
     margin: 3rem 0;
     padding: 0 8rem;
@@ -22,5 +22,9 @@ export const About = styled.section`
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+    }
+    div{
+        display: flex;
+        justify-content: space-evenly;
     }
 `;
