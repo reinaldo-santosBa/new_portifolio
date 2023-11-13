@@ -32,7 +32,7 @@ export const lightTheme = {
 	},
 	fonts: {
 		fontPrimary: '#171717',
-		fontSecondary: '#535353'
+		fontSecondary: '#cfcfcf'
 	},
 	input: {
 		inputBorder: '#E1E1E1'

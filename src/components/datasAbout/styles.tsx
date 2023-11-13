@@ -12,6 +12,7 @@ export const AreaCircle = styled.div`
     }
     h3 {
         font-size: 1.5rem;
+        color: ${props => props.theme.fonts.fontSecondary};
     }
     .circleOut {
         display: flex;
