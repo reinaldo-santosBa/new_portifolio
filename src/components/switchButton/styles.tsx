@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const AreaSwitch = styled.div`
-    background: ${(props) => props.theme.background.backgroundSecondary};
+    background: ${(props) => props.theme.background.backgroundPrimary};
     height: 1.5rem;
     cursor: pointer;
     width: 4rem;
