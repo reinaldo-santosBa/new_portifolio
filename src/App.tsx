@@ -5,6 +5,7 @@ import { darkTheme, lightTheme } from './theme/theme';
 import { Menu } from './components/menu/menu';
 import { AboutSection } from './components/about/about';
 import { BannerSecion } from './components/banner/banner';
+import { ServiceSection } from './components/services/services';
 const App: React.FC = () => {
 	const [theme, setTheme] = React.useState('');
 	useEffect(()=>{
@@ -24,6 +25,7 @@ const App: React.FC = () => {
 			<Menu mode={theme} toggleTheme={toggleTheme}/>
 			<BannerSecion/>
 			<AboutSection/>
+			<ServiceSection/>
 		</ThemeProvider>
 	);
 };
