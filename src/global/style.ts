@@ -4,6 +4,9 @@ export const GlobalStyles = createGlobalStyle`
   html{
     font-size: 62.5%;
   }
+  *{
+    transition: .1s;
+  }
   *,
   *::before,
   *::after {
