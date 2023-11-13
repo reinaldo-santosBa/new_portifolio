@@ -2,26 +2,25 @@ import styled from 'styled-components';
 
 export const About = styled.section`
     display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+    margin: 3rem 0;
     padding: 0 8rem;
-    align-items: center;
-    justify-content: center;
-    flex-wrap wrap:
-    width: 100vw;
-    gap: 2rem;
-    height: 100vh;
-    div{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex: 1;
-        height: 100%;
-        div{
-
-            img{
-                padding: 5%;
-                background: ${props => props.theme.background.backgroundSecondary};
-                border-radius: 50%;
-            }
-        }
+    h1{
+        font-size: 4rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+    }
+    p{
+        margin: 0 auto;
+        text-align: center;
+        width: 80%;
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
     }
 `;

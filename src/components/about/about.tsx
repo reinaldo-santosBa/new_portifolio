@@ -1,17 +1,13 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import * as S from './styles';
-import Person from '../../assets/person.jpeg';
 export const AboutSection:React.FC = () =>{
 	return(
 		<S.About>
-			<div>
-
-			</div>
-			<div>
-				<div>
-					<img src={Person} alt="" />
-				</div>
-			</div>
+			<h1>About</h1>
+			<p>
+				Hello! I'm Reinaldo, a seasoned systems analyst with extensive experience in frontend development for web and mobile, specializing in React Native and React JS. My passion lies in crafting engaging and functional interfaces that deliver exceptional user experiences. Throughout my career, I've continually sought to enhance my skills and stay updated with the latest technological trends. I believe in the power of collaboration and look forward to contributing to innovative and challenging projects. Let's turn ideas into digital reality!
+			</p>
 		</S.About>
 	);
 };
