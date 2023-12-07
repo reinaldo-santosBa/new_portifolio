@@ -14,12 +14,48 @@ export const Contact = styled.section`
         line-height: normal;
         text-align: center;
     }
-    div{
-        display: flex;
-        justify-content: space-evenly;
-        background: ${props => props.theme.background.backgroundSecondary};
-        gap: 2rem;
-        border-radius: 1rem;
-        padding: 3rem;
+    form{
+        width: 100%;
+        max-width: 80rem;
+        margin: 0 auto;
+        position: relative;
+        div{
+            display: flex;
+            gap:1.5rem;
+            margin-bottom: 5rem;
+            input,textArea{
+                background: transparent;
+                outline: none;
+                border: none;
+                flex: 1;
+                color:${props => props.theme.fonts.fontSecondary};
+                font-size: 1.5rem;
+                font-family:  ${(props) => props.theme.fontFamily.main};
+                padding: 1rem;
+                resize: none;
+            }
+            textArea{
+                border: 1px solid ${props => props.theme.fonts.fontSecondary};
+                border-radius: .1rem;
+                height: 10rem;
+            }
+            input{
+                border-bottom: 1px solid ${props => props.theme.fonts.fontSecondary};
+            }
+        }
+        input[type=submit]{
+            position: absolute;
+            outline: none;
+            border: none;
+            height: 5rem;
+            width: 20rem;
+            background: ${props => props.theme.button.primary};
+            color: ${(props) => props.theme.button.colorFontPrimary};
+            font-size: 2rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            right: 50%;
+            transform: translate(50%,0 )
+        }
     }
 `;
