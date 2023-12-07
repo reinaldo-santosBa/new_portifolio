@@ -7,6 +7,8 @@ export const ServiceItemArea = styled.div`
     padding: 3rem;
     border-radius: 2rem;
     background: ${props => props.theme.background.backgroundSecondary};
+    border-bottom: 10px solid ${props => props.theme.background.backgroundSecondary};
+
     p{
         color: ${props => props.theme.fonts.fontSecondary};
         font-size: 4rem;
@@ -15,5 +17,8 @@ export const ServiceItemArea = styled.div`
         line-height: normal;
         width: 100%;
         text-align: start;
+    }
+    &&:hover{
+        border-bottom: 10px solid ${props => props.theme.button.primary};
     }
 `;
