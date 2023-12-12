@@ -24,21 +24,28 @@ export const ContactSection: React.FC = () => {
 			</h1>
 			<form onSubmit={handleSubmit(onSubmit)}>
 				<div>
-					<input placeholder='Name' {...register('name', { required: true })} />
-					{errors.name && <span>This name is required</span>}
-
+					<div className='areaInput'>
+						<input placeholder='Name' {...register('name', { required: true })} />
+						{errors.name && <span>This name is required</span>}
+					</div>
 				</div>
 				<div>
-					<input placeholder='E-mail' {...register('email', { required: true })} />
-					{errors.email && <span>This email is required</span>}
-					<input placeholder='Phone number' {...register('number', { required: true })} />
-					{errors.email && <span>This phone number is required</span>}
+					<div className='areaInput'>
+						<input placeholder='E-mail' {...register('email', { required: true })} />
+						{errors.email && <span>This email is required</span>}
+					</div>
+					<div className='areaInput'>
+						<input placeholder='Phone number' {...register('number', { required: true })} />
+						{errors.email && <span>This phone number is required</span>}
+					</div>
 				</div>
 				<div>
-					<textarea placeholder='Message' {...register('message', { required: true })} />
-					{errors.number && <span>This message is required</span>}
+					<div className='areaInput'>
+						<textarea placeholder='Message' {...register('message', { required: true })} />
+						{errors.number && <span>This message is required</span>}
+					</div>
 				</div>
-				<input type={'submit'} />
+				<input type={'submit'} value={'Submit'} />
 			</form>
 		</S.Contact>
 	);
