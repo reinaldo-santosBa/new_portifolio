@@ -31,6 +31,11 @@ module.exports = {
 		'@typescript-eslint',
 		'react'
 	],
+	'settings': {
+		'react': {
+			'version': '18.2.0',
+		},
+	},
 	'rules': {
 		'indent': [
 			'error',

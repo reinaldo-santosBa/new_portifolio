@@ -9,11 +9,19 @@ export const Banner = styled.section`
     width: 100%;
     gap: 2rem;
     height: 100vh;
+    @media (max-width: 800px) {
+        flex-direction: column;
+        gap: 5rem;
+        padding: 0 2rem;
+    }
     div{
         display: flex;
         justify-content: center;
         flex-direction: column ;
         flex: 1;
+        @media (max-width: 800px) {
+            flex: 0;
+        }
         height: max-content;
         h1{
             color: ${props => props.theme.fonts.main};
@@ -32,7 +40,7 @@ export const Banner = styled.section`
         div{
 
             img{
-                width: 80%;
+                width: 100%;
                 padding: 5%;
                 background: ${props => props.theme.background.backgroundSecondary};
                 border-radius: 50%;
@@ -63,4 +71,7 @@ export const Button = styled.button<IButton>`
     font-size: 1.4rem;
     border-radius: 1rem;
     cursor: pointer;
+    @media (max-width: 800px) {
+        max-height: 4.2rem;
+    }
 `;

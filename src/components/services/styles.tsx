@@ -7,6 +7,9 @@ export const Service = styled.section`
     width: 100%;
     margin: 10rem 0;
     padding: 0 8rem;
+    @media (max-width: 800px) {
+        padding: 0 2rem;
+    }
     h1{
         font-size: 4rem;
         font-style: normal;
@@ -24,10 +27,15 @@ export const Service = styled.section`
         line-height: normal;
     }
     div{
+        
         display: flex;
         justify-content: space-evenly;
         gap: 2rem;
         border-radius: 1rem;
+        @media (max-width: 800px) {
+            display: flex;
+            flex-direction: column;
+        }
     }
 `;
 

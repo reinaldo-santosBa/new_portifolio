@@ -1,7 +1,6 @@
 import React from 'react';
 import * as S from './styles';
 import { ServiceItem } from '../serviceItem/serviceItem';
-//import { faMobileAlt, faComputer, faCode } from '@fortawesome/free-solid-svg-icons';
 
 export const ServiceSection: React.FC = () => {
 	return (

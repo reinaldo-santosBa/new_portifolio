@@ -7,6 +7,9 @@ export const About = styled.section`
     width: 100%;
     margin: 3rem 0;
     padding: 0 8rem;
+    @media (max-width: 800px) {
+        padding: 0 2rem;
+    }
     h1{
         font-size: 4rem;
         font-style: normal;
@@ -22,9 +25,15 @@ export const About = styled.section`
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        @media (max-width: 800px) {
+            text-align: justify;
+        }
     }
     div{
         display: flex;
         justify-content: space-evenly;
+        @media (max-width: 800px) {
+            flex-direction: column;
+        }
     }
 `;

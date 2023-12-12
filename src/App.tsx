@@ -8,6 +8,8 @@ import { BannerSecion } from './components/banner/banner';
 import { ServiceSection } from './components/services/services';
 import { SkillsSections } from './components/skills/skills';
 import { ContactSection } from './components/contact/contact';
+import { Element } from 'react-scroll';
+
 const App: React.FC = () => {
 	const [theme, setTheme] = React.useState('');
 	useEffect(() => {
@@ -18,19 +20,32 @@ const App: React.FC = () => {
 			setTheme('light');
 		}
 	}, []);
+
 	const toggleTheme = () => {
 		setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
 	};
+
+
 	return (
 		<ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
 			<GlobalStyles />
 			<Menu mode={theme} toggleTheme={toggleTheme} />
-			<BannerSecion />
-			<AboutSection />
-			<ServiceSection />
-			<SkillsSections />
-			<ContactSection />
-		</ThemeProvider>
+			<Element name={'banner'}>
+				<BannerSecion />
+			</Element>
+			<Element name={'about'}>
+				<AboutSection />
+			</Element>
+			<Element name={'services'}>
+				<ServiceSection />
+			</Element>
+			<Element name={'skills'}>
+				<SkillsSections />
+			</Element>
+			<Element name={'contact'}>
+				<ContactSection />
+			</Element>
+		</ThemeProvider >
 	);
 };
 

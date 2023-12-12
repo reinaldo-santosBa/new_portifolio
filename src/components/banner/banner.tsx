@@ -1,18 +1,31 @@
 import React from 'react';
 import * as S from './styles';
 import Person from '../../assets/person.jpeg';
-export const BannerSecion:React.FC = () =>{
-	return(
+
+
+export const BannerSecion: React.FC = () => {
+	const handleDownload = () => {
+		const link = document.createElement('a');
+
+		link.href = '../../assets/curriculum_vitae.pdf';
+		link.download = 'curriculum.pdf';
+
+		document.body.appendChild(link);
+		link.click();
+		document.body.removeChild(link);
+
+	};
+	return (
 		<S.Banner>
 			<div>
-				<h1>Hi, I am <br/>
+				<h1>Hi, I am <br />
 					Reinaldo Santos
 				</h1>
 				<h3>
 					Frontend Developer
 				</h3>
 				<S.AreaBtn>
-					<S.Button>Download CV</S.Button>
+					<S.Button onClick={handleDownload}>Download CV</S.Button>
 					<S.Button outline>Learn more</S.Button>
 				</S.AreaBtn>
 			</div>
