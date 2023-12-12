@@ -21,26 +21,39 @@ export const Contact = styled.section`
         position: relative;
         div{
             display: flex;
-            gap:1.5rem;
-            margin-bottom: 5rem;
-            input,textArea{
-                background: transparent;
-                outline: none;
-                border: none;
-                flex: 1;
-                color:${props => props.theme.fonts.fontSecondary};
-                font-size: 1.5rem;
-                font-family:  ${(props) => props.theme.fontFamily.main};
-                padding: 1rem;
-                resize: none;
+            gap:2rem;
+            margin-bottom: 2rem;
+            @media (max-width: 768px) {
+                flex-direction: column;
             }
-            textArea{
-                border: 1px solid ${props => props.theme.fonts.fontSecondary};
-                border-radius: .1rem;
-                height: 10rem;
-            }
-            input{
-                border-bottom: 1px solid ${props => props.theme.fonts.fontSecondary};
+            .areaInput{
+                display:flex;
+                flex-direction: column;
+                flex:1;
+
+                input,textArea{
+                    background: transparent;
+                    outline: none;
+                    border: none;
+                    flex: 1;
+                    color:${props => props.theme.fonts.fontSecondary};
+                    font-size: 1.5rem;
+                    font-family:  ${(props) => props.theme.fontFamily.main};
+                    padding: 1rem;
+                    resize: none;
+                }
+                textArea{
+                    border: 1px solid ${props => props.theme.fonts.fontSecondary};
+                    border-radius: .1rem;
+                    min-height: 10rem;
+                }
+                input{
+                    border-bottom: 1px solid ${props => props.theme.fonts.fontSecondary};
+                }
+                span{
+                    color: red;
+                    font-size: 1.6rem;
+                }
             }
         }
         input[type=submit]{
